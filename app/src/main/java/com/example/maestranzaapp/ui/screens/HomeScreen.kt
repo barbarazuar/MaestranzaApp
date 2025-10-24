@@ -1,4 +1,4 @@
-package com.example.maestranzaapp.ui.theme
+package com.example.maestranzaapp.ui.screens
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.TopAppBar
@@ -20,13 +20,13 @@ import androidx.compose.ui.res.painterResource
 @OptIn( ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(){
-    Scaffold(// Contendor principal
-        topBar ={
+    Scaffold(
+        topBar = {
             TopAppBar(
                 title = {Text("Maestranza App")},
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.onPrimaryContainer
+                    containerColor = MaterialTheme.colorScheme.primary,
+                    titleContentColor = MaterialTheme.colorScheme.onPrimary
                 )
             )
         }
@@ -40,7 +40,7 @@ fun HomeScreen(){
         ){
             Text(text = "Bienvenido a Maestranza App")
             Button(onClick ={/*accion futura*/}){
-            Text("Presioname")
+            Text("Ingresar")
             }
             Image(
                 painter = painterResource(id = R.drawable.logo),

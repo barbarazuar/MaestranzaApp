@@ -1,4 +1,4 @@
-package com.example.maestranzaapp.ui.theme
+package com.example.maestranzaapp.ui.themes
 
 import androidx.compose.ui.graphics.Color
 
