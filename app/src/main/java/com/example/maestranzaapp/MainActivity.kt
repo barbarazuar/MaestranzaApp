@@ -5,7 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.example.maestranzaapp.ui.screens.home.WelcomeScreen
-import com.example.maestranzaapp.ui.themes.MaestranzaAppTheme
+import com.example.maestranzaapp.ui.theme.MaestranzaAppTheme
 
 
 class MainActivity : ComponentActivity() {
