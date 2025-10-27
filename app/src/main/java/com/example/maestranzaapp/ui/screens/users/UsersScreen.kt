@@ -7,12 +7,12 @@ import com.example.maestranzaapp.ui.utils.obtenerWindowSizeClass
 import com.example.maestranzaapp.viewmodel.MainViewModel
 
 @Composable
-fun UsersScreen(navController: NavController, viewModel: MainViewModel) {
+fun UserScreen(navController : NavController, viewModel : MainViewModel) {
     val windowSizeClass = obtenerWindowSizeClass()
 
     when (windowSizeClass.widthSizeClass) {
-        WindowWidthSizeClass.Compact -> UsersScreenCompact()
-        WindowWidthSizeClass.Medium -> UsersScreenMedium()
-        WindowWidthSizeClass.Expanded -> UsersScreenExpanded()
+        WindowWidthSizeClass.Compact -> UserScreenCompact(navController, viewModel)
+        WindowWidthSizeClass.Medium -> UserScreenMedium(navController, viewModel)
+        WindowWidthSizeClass.Expanded -> UserScreenExpanded(navController, viewModel)
     }
 }

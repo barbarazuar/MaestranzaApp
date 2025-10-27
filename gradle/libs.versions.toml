@@ -14,6 +14,7 @@ material3 = "1.4.0"
 navigationCompose = "2.9.5"
 runtime = "1.9.4"
 navigationevent = "1.0.0-beta01"
+roomKtx = "2.8.3"
 
 
 [libraries]
@@ -37,6 +38,7 @@ androidx-foundation-layout = { group = "androidx.compose.foundation", name = "fo
 material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
 androidx-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "runtime" }
 androidx-navigationevent = { group = "androidx.navigationevent", name = "navigationevent", version.ref = "navigationevent" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

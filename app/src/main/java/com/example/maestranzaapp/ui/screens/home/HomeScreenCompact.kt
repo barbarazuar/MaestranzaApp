@@ -1,20 +1,10 @@
 package com.example.maestranzaapp.ui.screens.home
 
+import android.annotation.SuppressLint
+import androidx.navigation.NavController
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
-import androidx.compose.material3.Button
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -22,15 +12,23 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.maestranzaapp.R
+import androidx.navigation.compose.rememberNavController
+import com.example.maestranzaapp.navigation.Screen
 import com.example.maestranzaapp.ui.theme.MaestranzaAppTheme
+import com.example.maestranzaapp.viewmodel.MainViewModel
+import com.example.maestranzaapp.R
+
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreenCompact() {
+fun HomeScreenCompact(
+    navController: NavController,
+    viewModel: MainViewModel
+){
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Compact") })
+            TopAppBar(title = { Text("") })
         }
     ) { innerPadding ->
         Column(
@@ -54,7 +52,7 @@ fun HomeScreenCompact() {
             )
             Spacer(modifier = Modifier.height(32.dp))
             Button(
-                onClick = { /* Acción futura */ },
+                onClick = { viewModel.navigateTo(Screen.Inventory) },
                 modifier = Modifier.fillMaxWidth()
             ) {
                 Text("Comenzar")
@@ -63,10 +61,14 @@ fun HomeScreenCompact() {
     }
 }
 
+@SuppressLint("ViewModelConstructorInComposable")
 @Preview(showBackground = true, name = "Compact", device = "spec:width=411dp,height=891dp,dpi=420")
 @Composable
 fun HomeScreenCompactPreview(){
     MaestranzaAppTheme {
-        HomeScreenCompact()
+        HomeScreenCompact(
+            navController = rememberNavController(),
+            viewModel = MainViewModel()
+        )
     }
 }

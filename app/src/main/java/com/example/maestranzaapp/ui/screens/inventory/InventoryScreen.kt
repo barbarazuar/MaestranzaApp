@@ -8,13 +8,12 @@ import com.example.maestranzaapp.viewmodel.MainViewModel
 
 
 @Composable
-fun InventoryScreen(navController: NavController, viewModel: MainViewModel) {
+fun InventoryScreen(navController : NavController, viewModel : MainViewModel) {
     val windowSizeClass = obtenerWindowSizeClass()
 
     when (windowSizeClass.widthSizeClass) {
-        WindowWidthSizeClass.Compact -> InventoryScreenCompact()
-        WindowWidthSizeClass.Medium -> InventoryScreenMedium()
-        WindowWidthSizeClass.Expanded -> InventoryScreenExpanded()
+        WindowWidthSizeClass.Compact -> InventoryScreenCompact(navController, viewModel)
+        WindowWidthSizeClass.Medium -> InventoryScreenMedium(navController, viewModel)
+        WindowWidthSizeClass.Expanded -> InventoryScreenExpanded(navController, viewModel)
     }
 }
-
