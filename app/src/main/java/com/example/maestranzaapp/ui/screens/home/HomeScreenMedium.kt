@@ -29,7 +29,7 @@ import com.example.maestranzaapp.ui.theme.MaestranzaAppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun WelcomeScreenMedium() {
+fun HomeScreenMedium() {
     Scaffold(
         topBar = {
             TopAppBar(title = { Text("Medium") })
@@ -70,8 +70,8 @@ fun WelcomeScreenMedium() {
 }
 @Preview(showBackground = true, name = "Medium", device = "spec:width=800dp,height=1280dp,dpi=320" )
 @Composable
-fun WelcomeScreenMediumPreview(){
+fun HomeScreenMediumPreview(){
     MaestranzaAppTheme {
-        WelcomeScreenMedium()
+        HomeScreenMedium()
     }
 }

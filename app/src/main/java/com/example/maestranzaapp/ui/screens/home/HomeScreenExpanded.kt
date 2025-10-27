@@ -28,7 +28,7 @@ import com.example.maestranzaapp.ui.theme.MaestranzaAppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun WelcomeScreenExpanded() {
+fun HomeScreenExpanded() {
     Scaffold(
         topBar = {
             TopAppBar(title = { Text("Expanded") })
@@ -70,8 +70,8 @@ fun WelcomeScreenExpanded() {
 
 @Preview(showBackground = true, name = "Expanded", device = "spec:width=1280dp,height=800dp,dpi=240" )
 @Composable
-fun WelcomeScreenExpandedPreview(){
+fun HomeScreenExpandedPreview(){
     MaestranzaAppTheme {
-        WelcomeScreenExpanded()
+        HomeScreenExpanded()
     }
 }

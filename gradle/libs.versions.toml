@@ -13,6 +13,7 @@ foundationLayout = "1.9.3"
 material3 = "1.4.0"
 navigationCompose = "2.9.5"
 runtime = "1.9.4"
+navigationevent = "1.0.0-beta01"
 
 
 [libraries]
@@ -35,6 +36,7 @@ androidx-material3-window-size-class1 = { group = "androidx.compose.material3", 
 androidx-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout", version.ref = "foundationLayout" }
 material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
 androidx-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "runtime" }
+androidx-navigationevent = { group = "androidx.navigationevent", name = "navigationevent", version.ref = "navigationevent" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

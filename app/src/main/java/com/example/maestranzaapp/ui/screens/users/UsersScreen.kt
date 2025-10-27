@@ -1,4 +1,4 @@
-package com.example.maestranzaapp.ui.screens.inventory
+package com.example.maestranzaapp.ui.screens.users
 
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
@@ -6,15 +6,13 @@ import androidx.navigation.NavController
 import com.example.maestranzaapp.ui.utils.obtenerWindowSizeClass
 import com.example.maestranzaapp.viewmodel.MainViewModel
 
-
 @Composable
-fun InventoryScreen(navController: NavController, viewModel: MainViewModel) {
+fun UsersScreen(navController: NavController, viewModel: MainViewModel) {
     val windowSizeClass = obtenerWindowSizeClass()
 
     when (windowSizeClass.widthSizeClass) {
-        WindowWidthSizeClass.Compact -> InventoryScreenCompact()
-        WindowWidthSizeClass.Medium -> InventoryScreenMedium()
-        WindowWidthSizeClass.Expanded -> InventoryScreenExpanded()
+        WindowWidthSizeClass.Compact -> UsersScreenCompact()
+        WindowWidthSizeClass.Medium -> UsersScreenMedium()
+        WindowWidthSizeClass.Expanded -> UsersScreenExpanded()
     }
 }
-
