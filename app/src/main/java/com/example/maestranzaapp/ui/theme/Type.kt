@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.example.maestranzaapp.ui.theme
+=======
+package com.example.maestranzaapp.ui.themes
+>>>>>>> 91105c762831adc4eca5fa8ac0a317388cae7205
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -7,7 +11,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 // Set of Material typography styles to start with
+<<<<<<< HEAD
 val typography = Typography(
+=======
+val Typography = Typography(
+>>>>>>> 91105c762831adc4eca5fa8ac0a317388cae7205
     bodyLarge = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Normal,

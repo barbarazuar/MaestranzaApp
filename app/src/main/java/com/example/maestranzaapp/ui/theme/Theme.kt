@@ -9,8 +9,17 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
+<<<<<<< HEAD
 
 
+=======
+import com.example.maestranzaapp.ui.themes.Pink40
+import com.example.maestranzaapp.ui.themes.Pink80
+import com.example.maestranzaapp.ui.themes.Purple40
+import com.example.maestranzaapp.ui.themes.Purple80
+import com.example.maestranzaapp.ui.themes.PurpleGrey40
+import com.example.maestranzaapp.ui.themes.PurpleGrey80
+>>>>>>> 91105c762831adc4eca5fa8ac0a317388cae7205
 
 private val DarkColorScheme = darkColorScheme(
     primary = Purple80,

@@ -1,4 +1,5 @@
 [versions]
+
 agp = "8.13.1"
 kotlin = "2.2.0"
 coreKtx = "1.17.0"
@@ -43,6 +44,7 @@ androidx-navigationevent = { group = "androidx.navigationevent", name = "navigat
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "runtimeVersion" }
 androidx-compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "animation" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

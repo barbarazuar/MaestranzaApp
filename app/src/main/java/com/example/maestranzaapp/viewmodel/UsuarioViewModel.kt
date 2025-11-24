@@ -1,7 +1,11 @@
 package com.example.maestranzaapp.viewmodel
 
 import androidx.lifecycle.ViewModel
+<<<<<<< HEAD
 import com.example.maestranzaapp.data.model.UsuarioErrores
+=======
+import com.example.maestranzaapp.ui.model.UsuarioErrores
+>>>>>>> 91105c762831adc4eca5fa8ac0a317388cae7205
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update

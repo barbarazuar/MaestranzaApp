@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("kotlin-kapt")
+
 }
 
 android {
@@ -42,6 +43,7 @@ android {
 }
 
 dependencies {
+
     implementation("androidx.activity:activity-compose:1.6.1")
     implementation("androidx.compose.ui:ui:1.7.2")
     implementation("androidx.compose.material3:material3:1.1.3")
@@ -53,7 +55,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("androidx.room:room-runtime:2.6.0")
     implementation("androidx.room:room-ktx:2.6.0")
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

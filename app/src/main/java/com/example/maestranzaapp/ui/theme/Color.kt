@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.example.maestranzaapp.ui.theme
+=======
+package com.example.maestranzaapp.ui.themes
+>>>>>>> 91105c762831adc4eca5fa8ac0a317388cae7205
 
 import androidx.compose.ui.graphics.Color
 

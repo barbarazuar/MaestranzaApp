@@ -1,6 +1,7 @@
 package com.example.maestranzaapp.navigation
 
 sealed class Screen(val route: String) {
+
     data object Login : Screen("login")
     data object Inventory : Screen("inventario")
     data object Users : Screen("usuarios")
@@ -12,4 +13,9 @@ sealed class Screen(val route: String) {
     data object EditUser : Screen("editarUsuario/{userId}") {
         fun createRoute(userId: String) = "editarUsuario/$userId"
     }
+
+
+
+
+
 }
